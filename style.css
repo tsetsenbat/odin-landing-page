@@ -144,7 +144,7 @@ button {
     align-self: stretch;
     flex: 1.24;
     border-radius: 8px;
-    background: url(../media/migratory-birds-7242608_1920.jpg);
+    background: url(/media/migratory-birds-7242608_1920.jpg);
     background-size: cover;
 }
 
