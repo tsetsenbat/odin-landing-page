@@ -1,0 +1,288 @@
+/* General */
+
+:root{
+    --background-dark: #1f2937;
+    --hero-main-txt: #f9faf8;
+    --secondary-txt-2: #e5e7eb;
+    --header-logo-txt: #f9faf8;
+    --btn: #3882f6;
+    --info-header-txt: #1f2937;
+    --quote-bg: #e5e7eb;
+    --quote-txt: #1f2937;
+}
+
+:root {
+    --fontSize-1: 1rem;
+    --fontSize-2: 1.125rem;
+    --fontSize-3: 1.75rem;
+    --fontSize-4: 2rem;
+    --fontSize-5: 2.25rem;
+    --fontWeight-0: 200;
+    --fontWeight-1: 400;
+    --fontWeight-2: 600;
+  }
+
+:root {
+    --space-1: 16px;
+    --space-2: 36px;
+    --space-3: 45px;
+    --space-4: 60px;
+    --space-5: 181px;
+    --space-6: 200px;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--background-dark);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+h1, h2, h3{
+    font-weight: 600;
+    line-height: 1.1;
+    margin-top: 0;
+}
+
+p {
+    margin-top: 0;
+}
+
+a, a:visited, a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    font-family: inherit;
+    color: inherit;
+    border: 0;
+}
+
+.wrapper {
+    max-width: 1110px;
+    margin: auto;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+
+.section-1 {
+    background-color: var(--background-dark);
+    padding-block: var(--space-2) var(--space-4);
+    padding-inline: clamp(--space-1, 5vw, 181px);
+}
+
+.section-1 .wrapper {
+    gap: var(--space-4);
+}
+
+.section-1 .s1-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: var(--space-3);
+}
+
+.section-1 .header-logo {
+    font-size: var(--fontSize-3);
+    font-weight: var(--fontWeight-2);
+    color: var(--header-logo-txt);
+}
+
+.section-1 .header-menu {
+    display: flex;
+    gap: var(--space-3);
+}
+
+.section-1 .header-menu-item {
+    font-size: var(--fontSize-2);
+    color: var(--secondary-txt-2);
+}
+
+.section-1 .hero {
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3);
+}
+
+.section-1 .left-hero {
+    flex: 1;
+    display: flex;
+    gap: var(--space-1);
+    flex-direction: column;
+    color: var(--secondary-txt-2);
+}
+
+.section-1 .left-hero-heading{
+    font-size: var(--fontSize-5);
+    color: var(--hero-main-txt);
+}
+
+.section-1 .right-hero{
+    align-self: stretch;
+    flex: 1.24;
+    border-radius: 8px;
+    background: url(../media/migratory-birds-7242608_1920.jpg);
+    background-size: cover;
+}
+
+.button {
+    width: 170px;
+    height: 40px;
+    border-radius: 8px;
+}
+
+.button-cta {
+    font-size: var(--fontSize-1);
+    font-weight: var(--fontWeight-2);
+    background-color: var(--btn);
+    color: var(--secondary-txt-2);
+}
+
+/* Section 2 */
+
+.section-2 {
+    background-color: var(--hero-main-txt);
+    padding-block: var(--space-3) var(--space-4);
+    padding-inline: clamp(--space-1, 12vw, 181px);
+}
+
+.section-2 .wrapper {
+    gap: var(--space-2);
+}
+
+.s2-header {
+    display: flex;
+    justify-content: center;
+    color: var(--info-header-txt);
+}
+
+.s2-content {
+    display: flex;
+    gap: var(--space-2);
+}
+
+.s2-content .card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-1);
+    color: var(--info-header-txt);
+    font-weight: var(--fontWeight-0);
+}
+
+.s2-content .card .img {
+    border: 2px solid var(--btn);
+    border-radius: 8px;
+    width: 140px;
+    height: 140px;
+}
+
+.s2-content .card p {
+    text-align: center;
+}
+
+/* Section 3 */
+
+.section-3 {
+    background-color: var(--quote-bg);
+    padding-block: var(--space-4) var(--space-4);
+}
+
+.section-3 .wrapper {
+    max-width: 60ch;
+}
+
+.section-3 p.quote {
+    font-size: var(--fontSize-4);
+    color: var(--quote-txt);
+    font-weight: var(--fontWeight-0);
+    font-style: italic;
+}
+
+.section-3 p.author {
+    align-self: flex-end;
+    color: var(--background-dark);
+    font-weight: var(--fontWeight-2);
+}
+
+/* Section 4 */
+
+.section-4 {
+    background-color: var(--hero-main-txt);
+    padding-block: var(--space-3) var(--space-4);
+    padding-inline: var(--space-6);
+}
+
+.section-4 .wrapper {
+    max-width: 100ch;
+}
+
+.section-4 .call-to-action {
+    gap: 8px;
+    border-radius: 8px;
+    background-color: var(--btn);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: var(--space-2);
+    padding-inline: var(--space-4);
+}
+
+.section-4 .cta-txtbox {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.section-4 .cta-txtbox-big {
+    font-weight: var(--fontWeight-2);
+    font-size: var(--fontSize-3);
+    color: var(--hero-main-txt);
+}
+
+.section-4 .cta-txtbox-small {
+    font-size: var(--fontSize-1);
+    color: var(--hero-main-txt);
+}
+
+.btn {
+    width: 170px;
+    height: 40px;
+    border-radius: 8px;
+}
+
+.btn-cta {
+    color: var(--hero-main-txt);
+    font-size: var(--fontSize-1);
+    font-weight: var(--fontWeight-2);
+    background-color: var(--btn);
+}
+
+.btn-cta-transparent {
+    background-color: transparent;
+    border: 2px solid var(--hero-main-txt);
+}
